@@ -8,7 +8,7 @@ var box1, pig1,pig3;
 var backgroundImg,platform;
 var bird, slingshot;
 
-
+var arr =[10,20,30,40]
 function preload() {
     backgroundImg = loadImage("sprites/bg.png");
 }
@@ -17,6 +17,17 @@ function setup(){
     var canvas = createCanvas(1200,400);
     engine = Engine.create();
     world = engine.world;
+
+    var arr =[10,20,30,40, "laksh", "school", 95,35]
+    console.log(arr[3]);
+    console.log(arr.length);
+    arr.push(25);
+    console.log(arr.length);
+
+
+
+    var arr1 = [[2,1],[2,2],[4,5]];
+    console.log(arr1[2][1]);
 
 
     ground = new Ground(600,height,1200,20);
